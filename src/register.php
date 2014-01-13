@@ -1,33 +1,22 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: bhoo
- * Date: 1/11/14
- * Time: 12:30 PM
- */
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>WELCOME</title>
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
-    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
-
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
-</head>
-<body>
-
+<?php include('header.php'); ?>
+<style>
+    body {
+        background: url(http://localhost/videoproject/img/bridge.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
 <div class="container">
 
     <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-lock"></span>Register</div>
+                <div class="panel-body">
             <form role="form">
-                <h2 style="text-align:center">Please Sign Up </h2>
-                <hr class="colorgraph">
                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-6">
                         <div class="form-group">
@@ -83,12 +72,15 @@
                <hr class="colorgraph">
                 <div class="row">
                     <div class="col-md-6"><input type="submit" value="Create My Account" class="btn btn-primary btn-block btn-lg" tabindex="8"></div>
-                    <div class="col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign Me In</a></div>
+                    <div class="col-md-6"><a href="login.php" class="btn btn-success btn-block btn-lg">Sign Me In</a></div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+        </div>
+    </div>
+
 
 </body>
 

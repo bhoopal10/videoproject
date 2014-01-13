@@ -1,52 +1,62 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: bhoo
- * Date: 1/11/14
- * Time: 2:32 PM
- */
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>WELCOME</title>
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
-    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.css"/>
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
-    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<?php include('header.php'); ?>
+<style>body {
+        background: url(http://localhost/videoproject/img/bridge.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
-</head>
-<body>
-
+    .panel-default {
+        opacity: 0.9;
+        margin-top:30px;
+    }
+    .form-group.last { margin-bottom:0px; }</style>
 <div class="container">
-
     <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-            <form role="form">
-                <fieldset>
-                    <h2>Sign In</h2>
-                    <hr class="colorgraph">
-                    <div class="form-group">
-                        <input type="txt" name="username" id="username" class="form-control input-lg" placeholder="Username / Email Address">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
-                    </div>
-				<span class="button-checkbox">
-					<a href="" class="btn btn-link">Forgot Password?</a>
-				</span>
-                    <hr class="colorgraph">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+        <div class="col-md-4 col-md-offset-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-lock"></span> Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">
+                                Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                            </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <a href="" class="btn btn-lg btn-primary btn-block">Register</a>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">
+                                Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+                            </div>
                         </div>
-                    </div>
-                </fieldset>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-success btn-sm">
+                                    Sign in</button>
+                                <button type="reset" class="btn btn-default btn-sm">
+                                    Reset</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+                <div class="panel-footer">
+                    Not Registred? <a href="register.php">Register here</a></div>
+            </div>
         </div>
+    </div>
+</div>
